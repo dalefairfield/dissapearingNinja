@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+     <meta charset="utf-8">
+      <title>jQuery Functions</title>
+        <link rel="stylesheet" type="text/css" href="jquerystyle.css">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('img').click(function(){
+            $(this).hide()
+          });
+            $("#restore").click(function(){
+              $('img').show()
+            });
+        });
+        </script>
+      </head>
+      <body>
+        <img id="img1" src="peacockfeather.png">
+        <img id="img2" src="peacockfeather.png">
+        <img id="img3" src="peacockfeather.png">
+        <img id="img4" src="peacockfeather.png">
+        <img id="img5" src="peacockfeather.png">
+        <img id="img6" src="peacockfeather.png">
+        <img id="img7" src="peacockfeather.png">
+        <img id="img8" src="peacockfeather.png">
+        <div id="restore">
+          <button id="restore">Restore the hidden images</button>
+      </body>
+</html>
